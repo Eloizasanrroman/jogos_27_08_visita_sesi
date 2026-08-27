@@ -456,7 +456,7 @@ h1 {
         width: 100%;
         min-height: 100vh;
         height: auto;
-        padding: 18px 15px 30px;
+        padding: 80px 15px 30px;
         align-items: flex-start;
         justify-content: center;
     }
@@ -466,13 +466,10 @@ h1 {
         margin: 0 auto;
     }
     .botao-voltar {
-        position: relative;
-        top: auto;
-        left: auto;
-        width: fit-content;
-        margin-bottom: 18px;
-        padding: 8px 13px;
-        font-size: 12px;
+        top: 16px;
+        left: 15px;
+        padding: 9px 13px;
+        font-size: 10px;
     }
     .icone-palavras {
         width: 48px;
@@ -606,9 +603,6 @@ h1 {
     .pagina {
         padding-left: 10px;
         padding-right: 10px;
-    }
-    .botao-voltar {
-        margin-bottom: 14px;
     }
     h1 {
         font-size: 37px;
