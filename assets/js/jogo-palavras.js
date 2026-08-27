@@ -1,70 +1,106 @@
 const palavras = {
     facil: [
         {
-            palavra: "GATO",
-            dica: "É um animal doméstico que gosta de dormir."
+            palavra: "ABAJUR",
+            dica: "Objeto usado para iluminar um ambiente."
         },
         {
-            palavra: "BOLA",
-            dica: "É usada em vários esportes."
+            palavra: "BUSSOLA",
+            dica: "Instrumento usado para descobrir direções."
         },
         {
-            palavra: "CASA",
-            dica: "É o lugar onde muitas pessoas moram."
+            palavra: "AMPULHETA",
+            dica: "Objeto que mede a passagem do tempo usando areia."
         },
         {
-            palavra: "FLOR",
-            dica: "Pode ser encontrada em jardins."
+            palavra: "DESPENSA",
+            dica: "Local destinado ao armazenamento de alimentos e outros mantimentos."
         },
         {
-            palavra: "LUA",
-            dica: "Pode ser vista no céu durante a noite."
-        }
+            palavra: "PLANETA",
+            dica: "Corpo celeste grande que gira em torno de uma estrela."
+        },
+        { 
+            palavra: "LABIRINTO", 
+            dica: "Lugar cheio de caminhos que podem confundir." 
+        },
+        {
+            palavra: "BENGALA",
+            dica: "Objeto utilizado como apoio por algumas pessoas ao caminhar."
+        },
+        {
+            palavra: "CORTINA",
+            dica: "Pode controlar a entrada de luz e a visibilidade de uma janela."
+        } 
     ],
 
     medio: [
         {
-            palavra: "JARDIM",
-            dica: "Lugar onde podemos encontrar muitas flores."
+            palavra: "BIBLIOTECA",
+            dica: "Lugar onde o conhecimento pode ser encontrado e organizado em diferentes formatos."
         },
         {
-            palavra: "ESCOLA",
-            dica: "Lugar onde estudamos e aprendemos."
+            palavra: "SEMAFORO",
+            dica: "Pode determinar quando diferentes participantes de uma via devem esperar ou seguir."
         },
         {
-            palavra: "VIAGEM",
-            dica: "Quando vamos conhecer outro lugar."
+            palavra: "ENCRUZILHADA",
+            dica: "Lugar onde dois ou mais caminhos se encontram."
         },
         {
-            palavra: "PLANETA",
-            dica: "A Terra é um deles."
+            palavra: "ELEVADOR",
+            dica: "Permite mudar de altura dentro de uma construção sem utilizar uma sequência de degraus."
         },
         {
-            palavra: "TESOURO",
-            dica: "Algo valioso que pode estar escondido."
+            palavra: "CORREDOR",
+            dica: "Espaço que normalmente não é o destino final, mas permite chegar a outros lugares."
+        },
+        {
+            palavra: "FRONTEIRA",
+            dica: "Pode separar territórios sem necessariamente existir como uma barreira física."
+        },
+        {
+            palavra: "ENTULHO",
+            dica: "Conjunto de materiais ou restos deixados após uma construção ou reforma."
+        },
+        {
+            palavra: "EMBALAGEM",
+            dica: "Pode proteger um produto e também facilitar seu armazenamento ou transporte."
         }
     ],
 
     dificil: [
         {
-            palavra: "LABIRINTO",
-            dica: "Lugar cheio de caminhos que podem confundir."
+            palavra: "CAMPEONATO",
+            dica: "Reúne participantes que competem seguindo determinadas regras em busca de um resultado."
         },
         {
-            palavra: "AVENTURA",
-            dica: "Uma experiência emocionante e cheia de desafios."
+            palavra: "TERMÔMETRO",
+            dica: "Dispositivo que mede a energia térmica de um sistema usando escalas numéricas."
         },
         {
-            palavra: "CURIOSIDADE",
-            dica: "Vontade de descobrir ou aprender alguma coisa."
+            palavra: "DOCUMENTO",
+            dica: "Pode servir para registrar, comprovar ou identificar alguma informação importante."
         },
         {
-            palavra: "IMAGINACAO",
-            dica: "Capacidade de criar ideias e imagens na mente."
+            palavra: "CONTRATO",
+            dica: "Acordo jurídico formal entre partes com obrigações e direitos definidos."
         },
         {
-            palavra: "DESCOBERTA",
-            dica: "Quando encontramos ou aprendemos algo novo."
+            palavra: "REUNIÃO",
+            dica: "Convergência de pessoas agendada para tomada de decisão."
+        },
+        {
+            palavra: "ORÇAMENTO",
+            dica: "Estimativa financeira que limita os gastos e planeja as receitas de um período."
+        },
+        {
+            palavra: "INVESTIMENTO",
+            dica: "Aplicação de recursos financeiros ou tempo visando obter um retorno futuro."
+        },
+        {
+            palavra: "IMPOSTO",
+            dica: "Tributo financeiro obrigatório cobrado pelo Estado para financiar gastos públicos."
         }
     ]
 }
