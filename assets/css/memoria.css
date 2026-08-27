@@ -607,62 +607,217 @@ body {
 
 
 
-@media (max-height: 850px) {
+@media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
     .pagina {
-        padding-top: 10px;
-    }
-    .cabecalho h1 {
-        font-size: 52px;
-    }
-    .tabuleiro {
-        grid-template-columns: repeat(4, 125px);
-        grid-template-rows: repeat(4, 125px);
-        gap: 13px;
-        margin-top: 16px;
-    }
-    .carta {
-        width: 125px;
-        height: 125px;
-    }
-    .botao-dica {
-        margin-top: 8px;
-        height: 48px;
-    }
+        min-height: 100vh;
+        height: auto;
+        padding: 15px 10px 30px;
+    }    
     .botao-voltar {
-        top: 18px;
+        position: relative;
+        top: auto;
+        left: auto;
+        align-self: flex-start;
+        margin-left: 5px;
+        margin-bottom: 12px;
+        padding: 8px 13px;
+        font-size: 12px;
     }
     .informacoes {
-        top: 18px;
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+    .tempo-box,
+    .pares-box {
+        width: 140px;
+        height: 50px;
+        padding: 0 14px;
+        gap: 8px;
+    }
+    .icone-info {
+        width: 32px;
+        height: 32px;
+        font-size: 20px;
+    }
+    .info-label {
+        font-size: 11px;
+    }
+    .tempo-box strong,
+    .pares-box strong {
+        font-size: 17px;
+    }
+    .cabecalho {
+        width: 100%;
+    }
+    .icone-jogo {
+        transform: scale(0.75);
+        margin-bottom: -2px;
+    }
+    .cabecalho h1 {
+        font-size: 38px;
+        line-height: 1;
+        margin-top: 8px;
+    }
+    .cabecalho p {
+        font-size: 13px;
+        margin-top: 7px;
+    }
+    .divisor {
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+    .divisor span {
+        width: 55px;
+    }
+    .tabuleiro {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 8px;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+    .carta {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        height: auto;
+    }
+    .carta-frente,
+    .carta-verso {
+        border-radius: 12px;
+    }
+    .carta-frente {
+        font-size: 30px;
+    }
+    .carta-verso {
+        font-size: 40px;
+    }
+    .botao-dica {
+        min-width: 135px;
+        width: 135px;
+        height: 48px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        gap: 9px;
+        padding: 0 8px 0 12px;
+        font-size: 13px;
+    }
+    .botao-dica i {
+        font-size: 18px;
+    }
+    .botao-dica strong {
+        width: 32px;
+        height: 32px;
+    }
+    .forma-esquerda {
+        width: 300px;
+        height: 300px;
+        left: -190px;
+        bottom: -160px;
+    }
+    .forma-direita {
+        width: 280px;
+        height: 280px;
+        right: -150px;
+        bottom: -140px;
+    }
+    .linha-esquerda {
+        width: 350px;
+        height: 450px;
+        left: -300px;
+        bottom: -130px;
+    }
+    .linha-direita {
+        width: 400px;
+        height: 550px;
+        right: -300px;
+        top: -180px;
+    }
+    .circulo-1 {
+        width: 50px;
+        height: 50px;
+        right: 3%;
+        top: 35%;
+    }
+    .circulo-2 {
+        width: 35px;
+        height: 35px;
+        right: 4%;
+        top: 50%;
+    }
+    .pontinhos-esquerda {
+        left: 15px;
+        bottom: 20px;
+    }
+    .pontinhos-direita {
+        right: 15px;
+        bottom: 20px;
+    }
+    .modal {
+        padding: 15px;
+    }
+    .modal-conteudo {
+        width: 100%;
+        max-width: 360px;
+        padding: 28px 22px;
+        border-radius: 28px;
+    }
+    .resultado-icone {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        margin-bottom: 14px;
+    }
+    .modal h2 {
+        font-size: 38px;
+    }
+    .modal p {
+        font-size: 13px;
+    }
+    .botao-jogar-novamente {
+        height: 50px;
+        font-size: 13px;
+    }
+    .modal-voltar {
+        font-size: 12px;
     }
 }
 
-@media (max-height: 720px) {
-    .cabecalho h1 {
-        font-size: 45px;
+@media (max-width: 380px) {
+    .pagina {
+        padding-left: 8px;
+        padding-right: 8px;
     }
-    .cabecalho p {
-        font-size: 14px;
+    .tempo-box,
+    .pares-box {
+        width: 130px;
+        padding: 0 10px;
     }
     .tabuleiro {
-        grid-template-columns: repeat(4, 105px);
-        grid-template-rows: repeat(4, 105px);
-        gap: 10px;
-        margin-top: 10px;
-    }
-    .carta {
-        width: 105px;
-        height: 105px;
+        gap: 6px;
     }
     .carta-frente {
-        font-size: 38px;
+        font-size: 25px;
     }
     .carta-verso {
-        font-size: 50px;
+        font-size: 34px;
     }
-    .icone-jogo {
-        transform: scale(0.85);
+    .cabecalho h1 {
+        font-size: 34px;
     }
     .botao-dica {
-        height: 45px;
+        width: 125px;
+        min-width: 125px;
     }
 }

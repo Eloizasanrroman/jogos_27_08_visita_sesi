@@ -484,36 +484,235 @@ h1 {
 
 
 @media (max-width: 550px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
     .pagina {
-        padding: 20px 15px;
+        min-height: 100vh;
+        height: auto;
+        padding: 80px 15px 30px;
+        align-items: flex-start;
+    }
+    .conteudo {
+        width: 100%;
+        max-width: 100%;
+    }
+    .botao-voltar {
+        top: 16px;
+        left: 15px;
+        padding: 9px 13px;
+        font-size: 10px;
+    }
+    .icone-palavras {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 8px;
+        border-radius: 13px;
+        font-size: 22px;
     }
     h1 {
-        font-size: 40px;
+        font-size: 39px;
+        line-height: 0.95;
+    }
+    .divisor {
+        margin: 10px auto 9px;
+        gap: 8px;
+    }
+    .divisor span {
+        width: 48px;
+    }
+    .jogador {
+        flex-wrap: wrap;
+        gap: 8px 14px;
+        margin-bottom: 13px;
+        font-size: 10px;
+    }
+    .nivel-display {
+        padding-left: 14px;
     }
     .card {
-        padding: 23px 20px;
+        width: 100%;
+        padding: 21px 16px 20px;
+        border-radius: 24px;
+    }
+    .card h2 {
+        font-size: 27px;
+        margin-bottom: 6px;
+    }
+    .dica-titulo {
+        font-size: 10px;
+    }
+    .dica {
+        font-size: 11px;
+        line-height: 1.45;
+        margin-bottom: 15px;
+    }
+    .palavra {
+        min-height: 55px;
+        gap: 5px;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+    .letra-slot {
+        width: 31px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .campo-letra {
+        width: 100%;
+        gap: 8px;
+    }
+    #letra-input {
+        width: 48px;
+        height: 43px;
+        flex-shrink: 0;
+        font-size: 17px;
+        border-radius: 12px;
+    }
+    .botao {
+        flex: 1;
+        height: 43px;
+        padding: 0 16px;
+        gap: 12px;
+        font-size: 10px;
+        letter-spacing: 1.4px;
+    }
+    .botao i {
+        font-size: 13px;
     }
     .informacoes {
+        margin-top: 13px;
         flex-direction: column;
         gap: 7px;
+        font-size: 9px;
     }
     .letras-usadas {
         max-width: 100%;
         text-align: center;
     }
+    .mensagem {
+        margin-top: 8px;
+        font-size: 11px;
+    }
+    .forma-esquerda {
+        width: 350px;
+        height: 350px;
+        left: -190px;
+        bottom: -200px;
+    }
+    .forma-direita {
+        width: 330px;
+        height: 310px;
+        right: -180px;
+        bottom: -170px;
+    }
+    .linha-esquerda {
+        width: 400px;
+        height: 450px;
+        left: -330px;
+        bottom: -130px;
+    }
+    .linha-direita {
+        width: 420px;
+        height: 550px;
+        right: -300px;
+        top: -150px;
+    }
+    .circulo-1 {
+        width: 45px;
+        height: 45px;
+        right: 4%;
+        top: 22%;
+    }
+    .circulo-2 {
+        width: 32px;
+        height: 32px;
+        right: 5%;
+        top: 38%;
+    }
+    .pontinhos-esquerda {
+        left: 15px;
+        bottom: 20px;
+        transform: scale(0.75);
+    }
+    .pontinhos-direita {
+        right: 10px;
+        bottom: 20px;
+        transform: scale(0.75);
+    }
 }
 
 @media (max-width: 400px) {
+    .pagina {
+        padding: 76px 11px 25px;
+    }
+    h1 {
+        font-size: 34px;
+    }
     .jogador {
-        flex-direction: column;
-        gap: 7px;
+        font-size: 9px;
+        gap: 6px 10px;
     }
     .nivel-display {
-        padding-left: 0;
-        border-left: none;
+        padding-left: 10px;
+    }
+    .card {
+        padding: 19px 13px 18px;
+    }
+    .card h2 {
+        font-size: 25px;
+    }
+    .dica {
+        font-size: 10px;
+    }
+    .palavra {
+        gap: 4px;
     }
     .letra-slot {
-        width: 30px;
+        width: 27px;
+        height: 37px;
+        font-size: 18px;
+    }
+    .campo-letra {
+        gap: 6px;
+    }
+    #letra-input {
+        width: 45px;
+        height: 42px;
+    }
+    .botao {
+        height: 42px;
+        padding: 0 12px;
+        gap: 8px;
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+    .informacoes {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 31px;
+    }
+    .icone-palavras {
+        width: 42px;
+        height: 42px;
         font-size: 20px;
+    }
+    .card h2 {
+        font-size: 23px;
+    }
+    .letra-slot {
+        width: 24px;
+        font-size: 16px;
+    }
+    #letra-input {
+        width: 42px;
+    }
+    .botao {
+        font-size: 8px;
     }
 }

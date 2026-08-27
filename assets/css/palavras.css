@@ -448,34 +448,191 @@ h1 {
 
 
 @media (max-width: 550px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
     .pagina {
-        padding: 20px 15px;
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        padding: 18px 12px 30px;
+        align-items: flex-start;
+    }
+    .conteudo {
+        width: 100%;
+        max-width: 100%;
+    }
+    .botao-voltar {
+        position: relative;
+        top: auto;
+        left: auto;
+        align-self: flex-start;
+        margin-bottom: 18px;
+        padding: 8px 13px;
+        font-size: 12px;
+    }
+    .icone-palavras {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 12px;
+        font-size: 25px;
     }
     h1 {
-        font-size: 44px;
+        font-size: 42px;
+        line-height: 0.95;
+    }
+    .divisor {
+        margin: 12px auto 10px;
+    }
+    .divisor span {
+        width: 55px;
+    }
+    .subtitulo {
+        font-size: 12px;
+        margin-bottom: 16px;
     }
     .card {
-        padding: 25px 22px;
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        padding: 25px 20px 22px;
+        border-radius: 25px;
+    }
+    .card h2 {
+        font-size: 28px;
+        margin-bottom: 4px;
+    }
+    .descricao {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 18px;
+    }
+    .campo {
+        margin-bottom: 16px;
+    }
+    .campo label {
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+    #nickname {
+        height: 44px;
+        font-size: 12px;
+        padding: 0 14px;
     }
     .niveis {
+        display: flex;
         gap: 6px;
     }
+    .nivel {
+        min-height: 72px;
+        padding: 8px 4px;
+        border-radius: 12px;
+    }
+    .nivel-titulo {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
     .nivel-texto {
-        font-size: 8px;
+        font-size: 9px;
+        line-height: 1.2;
+    }
+    .botao {
+        height: 45px;
+        margin-top: 2px;
+        gap: 28px;
+        font-size: 11px;
+    }
+    .botao i {
+        font-size: 16px;
+    }
+    .mensagem {
+        margin-top: 7px;
+        font-size: 10px;
+    }
+    .forma-esquerda {
+        width: 300px;
+        height: 300px;
+        left: -190px;
+        bottom: -150px;
+    }
+    .forma-direita {
+        width: 290px;
+        height: 290px;
+        right: -160px;
+        bottom: -150px;
+    }
+    .linha-esquerda {
+        width: 360px;
+        height: 450px;
+        left: -310px;
+        bottom: -130px;
+    }
+    .linha-direita {
+        width: 400px;
+        height: 550px;
+        right: -300px;
+        top: -180px;
+    }
+    .circulo-1 {
+        width: 50px;
+        height: 50px;
+        right: 3%;
+        top: 32%;
+    }
+    .circulo-2 {
+        width: 35px;
+        height: 35px;
+        right: 4%;
+        top: 48%;
+    }
+    .pontinhos-esquerda {
+        left: 12px;
+        bottom: 20px;
+    }
+    .pontinhos-direita {
+        right: 12px;
+        bottom: 20px;
     }
 }
 
 @media (max-width: 400px) {
+    .pagina {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .botao-voltar {
+        margin-bottom: 14px;
+    }
     h1 {
-        font-size: 38px;
+        font-size: 37px;
     }
     .subtitulo {
-        font-size: 12px;
+        font-size: 11px;
+    }
+    .card {
+        padding: 22px 16px 20px;
+    }
+    .card h2 {
+        font-size: 26px;
+    }
+    .descricao {
+        font-size: 11px;
     }
     .niveis {
-        flex-direction: column;
+        gap: 5px;
     }
     .nivel {
-        min-height: 52px;
+        min-height: 68px;
+        padding: 7px 3px;
+    }
+    .nivel-titulo {
+        font-size: 11px;
+    }
+    .nivel-texto {
+        font-size: 8px;
+    }
+    .botao {
+        gap: 22px;
     }
 }
