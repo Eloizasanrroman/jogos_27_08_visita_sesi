@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jogo das Palavras</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/jogo-palavras.css">
+</head>
+
+<body>
+    <div class="forma forma-esquerda"></div>
+    <div class="forma forma-direita"></div>
+
+    <div class="linha linha-esquerda"></div>
+    <div class="linha linha-direita"></div>
+
+    <div class="circulo circulo-1"></div>
+    <div class="circulo circulo-2"></div>
+
+
+    <div class="pontinhos pontinhos-esquerda">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="pontinhos pontinhos-direita">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
+
+
+    <main class="pagina">
+        <a href="palavras.html" class="botao-voltar">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Voltar</span>
+        </a>
+
+        <section class="conteudo">
+            <div class="icone-palavras">
+                <i class="fa-solid fa-font"></i>
+            </div>
+
+            <h1>Jogo das Palavras</h1>
+
+            <div class="divisor">
+                <span></span>
+                <i class="fa-solid fa-diamond"></i>
+                <span></span>
+            </div>
+
+            <div class="jogador">
+                <span>
+                    Olá, <strong id="nickname-display"></strong>!
+                </span>
+
+                <span class="nivel-display">
+                    <i class="fa-solid fa-star"></i>
+                    Nível: <strong id="nivel-display"></strong>
+                </span>
+            </div>
+
+
+            <div class="card">
+                <h2>Descubra a palavra!</h2>
+
+                <p class="dica-titulo">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    Dica
+                </p>
+
+                <p id="dica" class="dica">
+                    Carregando dica...
+                </p>
+
+
+                <div id="palavra" class="palavra">
+                </div>
+
+
+                <div class="campo-letra">
+                    <input
+                        type="text"
+                        id="letra-input"
+                        maxlength="1"
+                        placeholder="?"
+                        autocomplete="off"
+                    >
+
+                    <button id="tentar" class="botao">
+                        <span>TENTAR</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+
+                <div class="informacoes">
+                    <div class="erros">
+                        <i class="fa-solid fa-heart-crack"></i>
+                        Erros:
+                        <strong id="erros">0</strong> / 5
+                    </div>
+
+                    <div id="letras-usadas" class="letras-usadas">
+                        Letras usadas: nenhuma
+                    </div>
+                </div>
+
+
+                <p id="mensagem" class="mensagem"></p>
+
+
+                <div id="botoes-finais" class="botoes-finais">
+                    <button id="jogar-novamente" class="botao novamente">
+                        <i class="fa-solid fa-rotate-right"></i>
+                        JOGAR NOVAMENTE
+                    </button>
+
+                    <button id="voltar" class="voltar">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Trocar nível
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/jogo-palavras.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jogo das Palavras</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/palavras.css">
+</head>
+
+<body>
+    <div class="forma forma-esquerda"></div>
+    <div class="forma forma-direita"></div>
+
+    <div class="linha linha-esquerda"></div>
+    <div class="linha linha-direita"></div>
+
+    <div class="circulo circulo-1"></div>
+    <div class="circulo circulo-2"></div>
+
+    <div class="pontinhos pontinhos-esquerda">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="pontinhos pontinhos-direita">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
+    
+
+    <main class="pagina">
+        <a href="index.html" class="botao-voltar">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Voltar</span>
+        </a>
+
+        <section class="conteudo">
+            <div class="icone-palavras">
+                <i class="fa-solid fa-font"></i>
+            </div>
+
+            <h1>Jogo das Palavras</h1>
+
+            <div class="divisor">
+                <span></span>
+                <i class="fa-solid fa-diamond"></i>
+                <span></span>
+            </div>
+
+            <p class="subtitulo">
+                Prepare-se para testar seu vocabulário!
+            </p>
+
+
+            <div class="card">
+                <h2>Vamos começar?</h2>
+
+                <p class="descricao">
+                    Escolha seu apelido e o nível<br>
+                    de dificuldade para jogar.
+                </p>
+
+
+                <div class="campo">
+                    <label for="nickname">
+                        <i class="fa-solid fa-user"></i>
+                        Seu apelido
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nickname"
+                        placeholder="Digite seu apelido..."
+                        maxlength="20"
+                        autocomplete="off"
+                    >
+                </div>
+
+
+                <div class="campo">
+                    <label>
+                        <i class="fa-solid fa-star"></i>
+                        Escolha o nível
+                    </label>
+
+                    <div class="niveis">
+                        <button type="button" class="nivel selecionado" data-nivel="facil">
+                            <span class="nivel-titulo">Fácil</span>
+                            <span class="nivel-texto">Comece por aqui</span>
+                        </button>
+
+                        <button type="button" class="nivel" data-nivel="medio">
+                            <span class="nivel-titulo">Médio</span>
+                            <span class="nivel-texto">Um pouco mais difícil</span>
+                        </button>
+
+                        <button type="button" class="nivel" data-nivel="dificil">
+                            <span class="nivel-titulo">Difícil</span>
+                            <span class="nivel-texto">Desafie-se!</span>
+                        </button>
+                    </div>
+                </div>
+
+                <button id="continuar" class="botao">
+                    <span>CONTINUAR</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <p id="mensagem" class="mensagem"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/palavras.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jogo da Memória</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/memoria.css">
+</head>
+
+<body>
+    <div class="forma forma-esquerda"></div>
+    <div class="forma forma-direita"></div>
+
+    <div class="linha linha-esquerda"></div>
+    <div class="linha linha-direita"></div>
+
+    <div class="circulo circulo-1"></div>
+    <div class="circulo circulo-2"></div>
+
+    <div class="pontinhos pontinhos-esquerda">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="pontinhos pontinhos-direita">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
+
+
+    <main class="pagina">
+        <a href="index.html" class="botao-voltar">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Voltar</span>
+        </a>
+
+        <div class="informacoes">
+            <div class="tempo-box">
+                <div class="icone-info">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+
+                <div>
+                    <span class="info-label">Tempo</span>
+                    <strong id="tempo">01:00</strong>
+                </div>
+            </div>
+
+            <div class="pares-box">
+                <div class="icone-info estrela">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div>
+                    <span class="info-label">Pares</span>
+                    <strong id="pares">0/8</strong>
+                </div>
+            </div>
+        </div>
+
+        <header class="cabecalho">
+            <div class="icone-jogo">
+                <div class="mini-carta mini-carta-1">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="mini-carta mini-carta-2">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+
+            <h1>Jogo da Memória</h1>
+            <p>Encontre os pares iguais!</p>
+
+            <div class="divisor">
+                <span></span>
+                <i class="fa-solid fa-diamond"></i>
+                <span></span>
+            </div>
+        </header>
+
+        <section class="tabuleiro" id="tabuleiro"></section>
+
+        <button class="botao-dica" id="botaoDica">
+            <i class="fa-regular fa-lightbulb"></i>
+            <span>Dica</span>
+            <strong id="dicasRestantes">3</strong>
+        </button>
+    </main>
+
+    <div class="modal" id="modal">
+        <div class="modal-conteudo">
+            <div class="resultado-icone" id="resultadoIcone">
+                <i class="fa-solid fa-trophy"></i>
+            </div>
+
+            <h2 id="tituloResultado">Você ganhou!</h2>
+
+            <p id="mensagemResultado">
+                Parabéns! Você encontrou todos os pares!
+            </p>
+
+            <div class="resultado-tempo">
+                <i class="fa-regular fa-clock"></i>
+                <span>Tempo:</span>
+                <strong id="tempoFinal">00:00</strong>
+            </div>
+
+            <button class="botao-jogar-novamente" id="jogarNovamente">
+                <i class="fa-solid fa-rotate-right"></i>
+                  Jogar novamente
+            </button>
+
+            <a href="index.html" class="modal-voltar">
+                <i class="fa-solid fa-house"></i>
+                Voltar ao início
+            </a>
+        </div>
+    </div>
+
+    <script src="assets/js/memoria.js"></script>
+</body>
+</html>
